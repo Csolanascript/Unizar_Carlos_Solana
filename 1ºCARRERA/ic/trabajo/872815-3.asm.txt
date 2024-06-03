@@ -1,0 +1,30 @@
+.data 75 ; direccion de inicio de datos(decimal)
+vec: .ascii16 "CARLOS SOLANA." ; 
+cero: .dw 0 ; 
+letra: .rw ; 
+const: .dw 128 ;
+const1: .dw 32 ; constante que nos permite cambiar de mayuscula a	minuscula
+letraant: .dw32 ; guarda la letra anterior a la actual 
+tty_out: .rw 1 ; 
+espacioascci .dw 32 ; variable que guarda el espacio para compararlo
+.code ;inicio de codigo @
+		
+0		mov cero, tty_out		
+1		mov vec letra 				; letra=vec[i]; 
+3		while cmp vec punto 			; while(vec[i]!='.')
+4		beq halt 					; 
+5		while2 cmp letra espacio 		; while(letra!='espacio')
+6		beq escrib 					; 
+7		cmp letraant ,espacio 			; while(letraate='espacio')
+8		beq escrib 					; 
+9		minus add letra, const2 		; letra=letra+32
+10		cmp cero cero 				; while(0=0)
+11		beq escrib 					; 
+12		escrib mov letra, tty_out 		; cout<<letra
+13		mov letra, letraant 			; letraante=letra 
+14		add const, inst 				; i=i+1
+15		inst mov vec, letra			; letra=vec[i]
+16		cmp cero cero 				; while(0=0)
+17		beq while 					; salto a while
+18		halt cmp cero, cero 			; while(0=0)
+19		beq halt 					; 

@@ -1,0 +1,7 @@
+v2.0 raw
+acff a5db c000 6dda c011 6ddd c00c 6fdd
+c00c 2f5b acd9 c00c adff addf 2e0f a5db
+6cd9 c003 6cd9 c00e 18*0 20 36*0 43
+41 52 4c 4f 53 20 53 4f
+4c 41 4e 41 2e 0 2e 43
+80 20 20 20

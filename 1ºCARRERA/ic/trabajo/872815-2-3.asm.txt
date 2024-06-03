@@ -1,0 +1,29 @@
+.data 75 ; direccion de inicio de datos(decimal)
+cadena: .ascii16 "CARLOS SOLANA" 			; 
+cero: .dw 0 						;int cero = 0
+letra: .rw 							;char letra
+const: .dw 128 						;inst const = 128
+const1: .dw 32 						;inst const = 128
+tty_out: .rw 1 						;cout para escribir en pantalla
+espacio:.ascii16 ' '					;char16_t espacio = 0020
+.code 
+
+		
+								
+0		mov cero, tty_out						;borrar_pantalla()
+1		mov cadena letra 						;cadena = cadena[0]
+2		while cmp letra punto 					; while(vec[i]!='.'), mientras el vector no se acabe ya que la ultima componente es el punto
+3		beq halt 							;
+4		while2 cmp letra espacio 				;while(letra!='espacio')
+5		beq escrib 							; 
+6		minus add const1, letra 				; letra=letra+32
+7		cmp cero cero 						; while(0=0)
+8		beq escrib 							; 
+9		escrib mov letra, tty_out 				; cout<<letra
+10		add const, INST 						; i=i+1
+11		inst mov cadena, letra 					; letra=vec[i]
+12		cmp cero cero 						; while(0=0)
+13		beq while 							; 
+14		halt cmp cero, cero 					; while(0=0); 
+15		beq halt 							;
+
