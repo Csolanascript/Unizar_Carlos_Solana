@@ -1,0 +1,38 @@
+#*****************************************************************
+# File:   Makefile_p3
+# Author: PSCD-Unizar
+# Date:   octubre 2022
+# Coms:   Ejecutar "make -f Makefile_p3" para compilar
+#         Ejecutar "make -f Makefile_p3 clean" para limpiar (borrar lo que genere)
+#*****************************************************************
+
+#---------------------------------------------------------
+# macros
+RM = /bin/rm -f  # para limpiar
+CC = g++         # compilador
+#---------------------------------------------------------
+DIR_LIBS=./librerias
+MAT_LIB = ${DIR_LIBS}/Matrix
+MAT = ${MAT_LIB}/Matrix
+CMB_LIB = ${DIR_LIBS}/Concurrent_MultiBuffer
+CMB = ${CMB_LIB}/Concurrent_MultiBuffer
+BUFF_LIB=${DIR_LIBS}/MultiBuffer
+BUFF=${BUFF_LIB}/MultiBuffer
+#---------------------------------------------------------
+# opciones compilación y enlazado ("linkado")
+CPPFLAGS = -g -I. -I${MAT_LIB} -I${BUFF_LIB} -I${CMB_LIB} -O2 -std=c++11 -fmax-errors=10 # opciones compilación
+LDFLAGS  = -pthread  # opciones de "linkado"
+#---------------------------------------------------------
+# vars
+EJEC = practica_4
+
+all: ${EJEC}
+#---------------------------------------------------------
+# compilar
+${EJEC}: ${EJEC}.cpp ${BUFF}.hpp ${MAT}.hpp ${CMB}.hpp
+	${CC} ${EJEC}.cpp -o ${EJEC} ${CPPFLAGS} $(LDFLAGS)
+
+#---------------------------------------------------------
+# Cuidado con lo que se pone aquí, que se borra sin preguntar
+clean:
+	$(RM)  ${EJEC}

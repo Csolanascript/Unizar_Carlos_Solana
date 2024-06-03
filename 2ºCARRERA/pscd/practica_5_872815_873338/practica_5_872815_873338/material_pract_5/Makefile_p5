@@ -1,0 +1,67 @@
+#*****************************************************************
+# File:   Makefile_p5
+# Author: PSCD-Unizar
+# Date:   noviembre 2023
+# Coms:   Ejemplo de Makefile para la práctica 5 de PSCD
+#         "make -f Makefile_p5" construye todos los ejecutables
+#         "make -f Makefile_p5 Cliente" construye "Cliente"
+#         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#         Es necesario descomentar la línea 28 para poder compilar en hendrix
+#         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#*****************************************************************
+
+CC=g++
+
+CLIENT=Cliente
+SERVER=Servidor
+MULTI_SERVER=ServidorMulticliente
+SOCKET_DIR=Socket
+SOCKET=${SOCKET_DIR}/Socket
+
+CPPFLAGS=-I. -I${SOCKET_DIR} -std=c++11 -lsockets # Flags compilacion
+LDFLAGS=-pthread # Flags linkado threads
+
+all: ${CLIENT} ${SERVER} ${MULTI_SERVER} 
+#----------------------------------------------------------------------------
+#Para gestionar opciones de compilación según la máquina: hendrix tiene sus manías
+#Descomentar la siguiente línea para compilar en hendrix
+#SOCKETSFLAGS=-lsocket -lnsl
+#-----------------------------------------------------------
+# CLIENTE
+# Compilacion
+${CLIENT}.o: ${CLIENT}.cpp
+	${CC} -c ${CPPFLAGS} ${CLIENT}.cpp
+
+# Linkado
+${CLIENT}: ${SOCKET}.o ${CLIENT}.o  
+	${CC} ${LDFLAGS} ${SOCKET}.o ${CLIENT}.o -o ${CLIENT} ${SOCKETSFLAGS}
+#-----------------------------------------------------------
+# SERVIDOR
+# Compilacion
+${SERVER}.o: ${SERVER}.cpp 
+	${CC} -c ${CPPFLAGS} ${SERVER}.cpp
+
+# Linkado
+${SERVER}: ${SOCKET}.o ${SERVER}.o
+	${CC} ${LDFLAGS} ${SOCKET}.o ${SERVER}.o -o ${SERVER} ${SOCKETSFLAGS}
+#-----------------------------------------------------------
+# SERVIDOR MULTICLIENTE
+# Compilacion
+${MULTI_SERVER}.o: ${MULTI_SERVER}.cpp 
+	${CC} -c ${CPPFLAGS} ${MULTI_SERVER}.cpp
+
+# Linkado
+${MULTI_SERVER}: ${SOCKET}.o ${MULTI_SERVER}.o
+	${CC} ${LDFLAGS} ${SOCKET}.o ${MULTI_SERVER}.o -o ${MULTI_SERVER} ${SOCKETSFLAGS}
+#-----------------------------------------------------------
+# SOCKETS
+# Compilacion libreria de Sockets
+${SOCKET}.o: ${SOCKET}.hpp ${SOCKET}.cpp
+	${CC} -c ${CPPFLAGS} ${SOCKET}.cpp -o ${SOCKET}.o
+#-----------------------------------------------------------	
+# LIMPIEZA
+clean:
+	$(RM) ${SOCKET}.o
+	$(RM) ${CLIENT} ${CLIENT}.o
+	$(RM) ${SERVER} ${SERVER}.o
+	$(RM) ${MULTI_SERVER} ${MULTI_SERVER}.o

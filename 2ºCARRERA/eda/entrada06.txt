@@ -1,0 +1,209 @@
+A
+2023-12-30 11:00
+2023-15-5 12:00
+instante no valido
+15
+mes no valido
+LT
+A
+2023-12-15 11:00
+2023-12-35 12:00
+instante no valido
+35
+dia no valido
+LT
+A
+2023-10-01 20:00
+2023-10-03 25:00
+instante no valido
+25
+hora no valida
+LT
+A
+2023-10-01 20:00
+2023-10-03 20:90
+instante no valido
+90
+minutos no validos
+LT
+A
+2020-03-14 00:00
+2021-05-31 00:00
+no valido
+2020
+varios años
+LT
+A
+2023-01-01 12:00
+2023-12-31 15:00
+no valido
+12
+varios meses del mismo año
+LT
+A
+2023-10-03 11:00
+2023-10-01 12:00
+no valido
+3
+final con dia anterior al inicio
+LT
+A
+2023-10-03 12:00
+2023-10-03 10:00
+no valido
+12
+final con minuto anterior al inicio
+LT
+A
+2023-10-03 13:30
+2023-10-03 13:15
+no valido
+30
+final con hora anterior al inicio
+LT
+A
+2023-09-30 10:00
+2023-09-31 10:00
+instante no valido
+31
+dia fuera de ese mes
+LT
+A
+2023-02-20 11:00
+2023-02-29 10:00
+instante no valido
+29
+29 dias en febrero no bisiesto
+LT
+A
+2024-02-20 10:00
+2024-02-30 10:00
+instante no valido
+30
+30 dias en febrero bisiesto
+LT
+A
+2023-01-01 09:00
+2023-01-01 09:00
+Periodo1 valido
+1
+inicio de periodo igual a final de periodo
+LT
+A
+2024-02-20 11:00
+2024-02-29 10:00
+Periodo2 valido
+29
+29 dias en febrero bisiesto
+LT
+A
+2023-02-20 11:00
+2023-02-28 12:00
+Periodo3 valido
+28
+28 dias en febrero no bisiesto
+LT
+A
+2023-09-01 19:00
+2023-09-30 10:30
+Periodo4 valido
+30
+casi 30 dias en el periodo
+LT
+A
+2023-10-01 10:00
+2023-10-02 19:30
+periodo valido
+1
+algo mas de 1 dia
+LT
+A
+2023-02-02 09:30
+2023-02-02 10:00
+periodo valido
+1
+menos de una hora
+LT
+A
+2023-10-09 00:00
+2023-10-09 19:30
+periodo valido
+2250
+mas de un dia
+LT
+A
+2023-10-10 00:00
+2023-10-10 23:59
+periodo valido
+1439
+casi un dia entero
+LT
+A
+2023-10-03 19:30
+2023-10-03 19:30
+periodo valido
+0
+inicio igual a final
+LT
+A
+2023-11-12 00:00
+2023-11-13 00:00
+periodo valido
+1440
+un dia entero
+LT
+A
+2023-11-13 00:00
+2023-11-13 23:00
+periodo valido
+210
+inicio igual al final de otro periodo
+LT
+A
+2023-09-01 11:00
+2023-09-01 19:00
+periodo valido
+9360
+final igual al inicio de otro periodo
+LT
+A
+2023-10-09 19:30
+2023-10-10 00:00
+periodo valido
+990
+inicio y finales pegados a los de otros periodos
+LT
+A
+2023-10-02 19:00
+2023-10-03 09:30
+se solapa 1
+1
+solapa parcialmente
+LT
+A
+2023-10-10 10:00 
+2023-10-10 12:00 
+se solapa 2
+1
+esta dentro de otro
+LT
+A
+2023-11-11 12:00
+2023-11-13 12:00
+se solapa 3
+1
+contiene a otros
+LT
+A
+2023-11-13 12:00
+2023-11-13 20:00
+se solapa 4
+1
+solapa parcialmente
+LT
+LA
+periodo valido
+LA
+periodo
+LT
+LT

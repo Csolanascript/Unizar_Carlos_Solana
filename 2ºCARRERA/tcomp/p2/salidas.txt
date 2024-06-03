@@ -1,0 +1,7 @@
+#include<math .h>comentario ;;;;int a = 0;%}    otro comentario+ 	printf('' hola '') a++gg    'aabb''[A-Z]+ 	 a++ if (a ==0) a ++otro comentario;;;eturn a;}
+int () {  y otro comentario	yylex();} L1 : 6
+ L2 : 5
+ L3 : 3
+ C : 4
+ R : 3
+ I : 5

@@ -1,0 +1,50 @@
+{
+    "tasks": [
+        {
+            "label": "Open Terminal",
+            "type": "shell",
+            "command": "osascript -e 'tell application \"Terminal\"\ndo script \"echo hello\"\nend tell'",
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "label": "Compilar fichero activo en el editor",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Ejecutar fichero activo en el editor",
+            "command": "./${fileBasenameNoExtension}",
+            "windows": {
+                "command": "chcp 65001 ; .\\${fileBasenameNoExtension}.exe"
+            },
+            "dependsOn": "Compilar fichero activo en el editor",
+            "problemMatcher": []
+        },
+    ],
+    "presentation": {
+        "showReuseMessage": true,
+        "panel": "shared",
+        "reveal": "always",
+        "focus": true,
+    },
+    "version": "2.0.0"
+}

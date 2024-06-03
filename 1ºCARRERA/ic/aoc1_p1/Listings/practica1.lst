@@ -1,0 +1,141 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             datos,DATA,READWRITE 
+                                                            ; area de datos
+    2 00000000 00000001 
+              00000002 
+              00000004 
+              00000006 
+              00000008 
+              00000007 
+              00000009 serie   DCD              1,2,4,6,8,7,9 ; serie es una ta
+                                                            bla de 7 enteros
+    3 0000001C 0000001C 
+                       long    EQU              .-serie     ; long=28 (bytes qu
+                                                            e ocupa serie)
+    4 0000001C 00      resul   DCB              0           ; resultado
+    5 0000001D         
+    6 0000001D                 AREA             prog,CODE,READONLY 
+                                                            ; area de codigo
+    7 00000000                 ENTRY                        ; primera instrucci
+                                                            on a ejecutar
+    8 00000000         
+    9 00000000 E0200000        eor              r0,r0,r0    ; r0=0 (r0=direccio
+                                                            nes datos)
+   10 00000004 E1A01000        mov              r1,r0       ; r1=r0=0 (r1=resul
+                                                            tado suma) 
+   11 00000008         
+   12 00000008 E59F201C        LDR              r2,=serie   ; r2=direccion comi
+                                                            enzo tabla serie
+   13 0000000C E7923000 
+                       buc     ldr              r3,[r2,r0]  ; r3=Mem[r2+r0]
+   14 00000010 E0811003        add              r1,r1,r3    ; r1=r1+serie[i] (i
+                                                            =0,...,7)
+   15 00000014 E2800004        add              r0,r0,#4    ; r0=r0+4 (r0 apunt
+                                                            a siguiente elem)
+   16 00000018 E350001C        cmp              r0,#long    ; comparar r0 con l
+                                                            ong
+   17 0000001C 1AFFFFFA        bne              buc         ; salta a buc si r0
+                                                            <>long
+   18 00000020         
+   19 00000020 E59F2008        LDR              r2,=resul   ; r2=direccion resu
+                                                            l
+   20 00000024 E5C21000        strb             r1,[r2]     ; Mem[r2]=r1 (almac
+                                                            ena resultado)
+   21 00000028         
+   22 00000028 EAFFFFFE 
+                       fin     b                fin         ; fin de programa
+   23 0000002C         
+   24 0000002C                 END                          ; fin de ensamblado
+                                                            
+              00000000 
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
+bjects\practica1.d -o.\objects\practica1.o -IC:\Programas-Practicas\Simuladores
+\Keil\ARM\RV31\INC -IC:\Programas-Practicas\Simuladores\Keil\ARM\CMSIS\Include 
+-IC:\Programas-Practicas\Simuladores\Keil\ARM\INC\Philips --predefine="__EVAL S
+ETA 1" --predefine="__UVISION_VERSION SETA 526" --list=.\listings\practica1.lst
+ practica1.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+datos 00000000
+
+Symbol: datos
+   Definitions
+      At line 1 in file practica1.s
+   Uses
+      None
+Comment: datos unused
+resul 0000001C
+
+Symbol: resul
+   Definitions
+      At line 4 in file practica1.s
+   Uses
+      At line 19 in file practica1.s
+Comment: resul used once
+serie 00000000
+
+Symbol: serie
+   Definitions
+      At line 2 in file practica1.s
+   Uses
+      At line 3 in file practica1.s
+      At line 12 in file practica1.s
+
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+buc 0000000C
+
+Symbol: buc
+   Definitions
+      At line 13 in file practica1.s
+   Uses
+      At line 17 in file practica1.s
+Comment: buc used once
+fin 00000028
+
+Symbol: fin
+   Definitions
+      At line 22 in file practica1.s
+   Uses
+      At line 22 in file practica1.s
+Comment: fin used once
+prog 00000000
+
+Symbol: prog
+   Definitions
+      At line 6 in file practica1.s
+   Uses
+      None
+Comment: prog unused
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+long 0000001C
+
+Symbol: long
+   Definitions
+      At line 3 in file practica1.s
+   Uses
+      At line 16 in file practica1.s
+Comment: long used once
+1 symbol
+341 symbols in table

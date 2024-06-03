@@ -1,0 +1,16 @@
+NO LOCALIZADO: [ 2023-11-12 13:30 ;;; 2023-11-14 12:30 ]
+NO SOLAPE con: [ 2023-11-12 13:30 ;;; 2023-11-14 12:30 ]
+NO BORRADO: [ 2023-11-12 13:30 ;;; 2023-11-14 12:30 ]
+NO CAMBIADO: [ 2023-11-12 13:30 ;;; 2023-11-14 12:30 ] ::: entrega ::: (15) ::: entregar practica EDA
+****ACTIVIDAD: entrega
+****TOTAL dedicados: 0
+****ACTIVIDAD: coreano
+****TOTAL dedicados: 0
+-----LISTADO: 0
+-----
+****ACTIVIDAD: entrega EDA
+****TOTAL dedicados: 0
+-----LISTADO: 0
+-----
+-----LISTADO: 0
+-----

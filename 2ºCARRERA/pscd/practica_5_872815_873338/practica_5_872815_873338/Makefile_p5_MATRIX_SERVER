@@ -1,0 +1,55 @@
+#*****************************************************************
+# File:   Makefile_p5
+# Author: PSCD-Unizar
+# Date:   noviembre 2023
+# Coms:   Ejemplo de Makefile para la práctica 5 de PSCD
+#         "make -f Makefile_p5" construye todos los ejecutables
+#         "make -f Makefile_p5 Cliente" construye "Cliente"
+#         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#         Es necesario descomentar la línea 28 para poder compilar en hendrix
+#         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#*****************************************************************
+
+#---------------------------------------------------------
+# macros
+RM = /bin/rm -f  # para limpiar
+CC = g++         # compilador
+#---------------------------------------------------------
+DIR_LIBS=./librerias
+MAT_LIB = ${DIR_LIBS}/Matrix
+MAT = ${MAT_LIB}/Matrix
+SERVER=servidorMatrix
+SOCKET_DIR=Socket
+SOCKET=${SOCKET_DIR}/Socket
+#---------------------------------------------------------
+# opciones compilación y enlazado ("linkado")
+CPPFLAGS = -g -I. -I${MAT_LIB} -O2 -std=c++11 -fmax-errors=10 # opciones compilación
+SOCKFLAGS=-I. -I${SOCKET_DIR} -std=c++11 -lsockets # Flags compilacion
+LDFLAGS=-pthread # Flags linkado threads
+#---------------------------------------------------------
+
+
+all: ${SERVER}
+#----------------------------------------------------------------------------
+#Para gestionar opciones de compilación según la máquina: hendrix tiene sus manías
+#Descomentar la siguiente línea para compilar en hendrix
+SOCKETSFLAGS=-lsocket -lnsl
+#-----------------------------------------------------------
+# SERVIDOR
+# Compilacion
+${SERVER}.o: ${SERVER}.cpp 
+	${CC} -c ${SOCKFLAGS} $(CPPFLAGS) ${SERVER}.cpp
+
+# Linkado
+${SERVER}: ${SOCKET}.o ${SERVER}.o
+	${CC} ${LDFLAGS} ${SOCKET}.o ${SERVER}.o -o ${SERVER} ${SOCKETSFLAGS}
+#-----------------------------------------------------------
+# SOCKETS
+# Compilacion libreria de Sockets
+${SOCKET}.o: ${SOCKET}.hpp ${SOCKET}.cpp
+	${CC} -c ${SOCKFLAGS} ${SOCKET}.cpp -o ${SOCKET}.o
+#-----------------------------------------------------------	
+# LIMPIEZA
+clean:
+	$(RM) ${SOCKET}.o
+	$(RM) ${SERVER} ${SERVER}.o

@@ -1,0 +1,280 @@
+INSTANTE NO VALIDO
+PERIODO NO VALIDO
+-----LISTADO: 0
+-----
+INSTANTE NO VALIDO
+PERIODO NO VALIDO
+-----LISTADO: 0
+-----
+INSTANTE NO VALIDO
+PERIODO NO VALIDO
+-----LISTADO: 0
+-----
+INSTANTE NO VALIDO
+PERIODO NO VALIDO
+-----LISTADO: 0
+-----
+PERIODO NO VALIDO
+-----LISTADO: 0
+-----
+PERIODO NO VALIDO
+-----LISTADO: 0
+-----
+PERIODO NO VALIDO
+-----LISTADO: 0
+-----
+PERIODO NO VALIDO
+-----LISTADO: 0
+-----
+PERIODO NO VALIDO
+-----LISTADO: 0
+-----
+INSTANTE NO VALIDO
+PERIODO NO VALIDO
+-----LISTADO: 0
+-----
+INSTANTE NO VALIDO
+PERIODO NO VALIDO
+-----LISTADO: 0
+-----
+INSTANTE NO VALIDO
+PERIODO NO VALIDO
+-----LISTADO: 0
+-----
+INTRODUCIDO: [ 2023-01-01 09:00 ;;; 2023-01-01 09:00 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+-----LISTADO: 1
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+-----
+INTRODUCIDO: [ 2024-02-20 11:00 ;;; 2024-02-29 10:00 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----LISTADO: 2
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+INTRODUCIDO: [ 2023-02-20 11:00 ;;; 2023-02-28 12:00 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+-----LISTADO: 3
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+INTRODUCIDO: [ 2023-09-01 19:00 ;;; 2023-09-30 10:30 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+-----LISTADO: 4
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+INTRODUCIDO: [ 2023-10-01 10:00 ;;; 2023-10-02 19:30 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+-----LISTADO: 5
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+INTRODUCIDO: [ 2023-02-02 09:30 ;;; 2023-02-02 10:00 ] ::: periodo valido ::: (1) ::: menos de una hora
+-----LISTADO: 6
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+INTRODUCIDO: [ 2023-10-09 00:00 ;;; 2023-10-09 19:30 ] ::: periodo valido ::: (2250) ::: mas de un dia
+-----LISTADO: 7
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ] ::: periodo valido ::: (2250) ::: mas de un dia
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+INTRODUCIDO: [ 2023-10-10 00:00 ;;; 2023-10-10 23:59 ] ::: periodo valido ::: (1439) ::: casi un dia entero
+-----LISTADO: 8
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ] ::: periodo valido ::: (2250) ::: mas de un dia
+[ 2023-10-10 00:00 ;;; 2023-10-10 23:59 -> 1439 ] ::: periodo valido ::: (1439) ::: casi un dia entero
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+INTRODUCIDO: [ 2023-10-03 19:30 ;;; 2023-10-03 19:30 ] ::: periodo valido ::: (0) ::: inicio igual a final
+-----LISTADO: 9
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2023-10-03 19:30 ;;; 2023-10-03 19:30 -> 0 ] ::: periodo valido ::: (0) ::: inicio igual a final
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ] ::: periodo valido ::: (2250) ::: mas de un dia
+[ 2023-10-10 00:00 ;;; 2023-10-10 23:59 -> 1439 ] ::: periodo valido ::: (1439) ::: casi un dia entero
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+INTRODUCIDO: [ 2023-11-12 00:00 ;;; 2023-11-13 00:00 ] ::: periodo valido ::: (1440) ::: un dia entero
+-----LISTADO: 10
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2023-10-03 19:30 ;;; 2023-10-03 19:30 -> 0 ] ::: periodo valido ::: (0) ::: inicio igual a final
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ] ::: periodo valido ::: (2250) ::: mas de un dia
+[ 2023-10-10 00:00 ;;; 2023-10-10 23:59 -> 1439 ] ::: periodo valido ::: (1439) ::: casi un dia entero
+[ 2023-11-12 00:00 ;;; 2023-11-13 00:00 -> 1440 ] ::: periodo valido ::: (1440) ::: un dia entero
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+INTRODUCIDO: [ 2023-11-13 00:00 ;;; 2023-11-13 23:00 ] ::: periodo valido ::: (210) ::: inicio igual al final de otro periodo
+-----LISTADO: 11
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2023-10-03 19:30 ;;; 2023-10-03 19:30 -> 0 ] ::: periodo valido ::: (0) ::: inicio igual a final
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ] ::: periodo valido ::: (2250) ::: mas de un dia
+[ 2023-10-10 00:00 ;;; 2023-10-10 23:59 -> 1439 ] ::: periodo valido ::: (1439) ::: casi un dia entero
+[ 2023-11-12 00:00 ;;; 2023-11-13 00:00 -> 1440 ] ::: periodo valido ::: (1440) ::: un dia entero
+[ 2023-11-13 00:00 ;;; 2023-11-13 23:00 -> 1380 ] ::: periodo valido ::: (210) ::: inicio igual al final de otro periodo
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+INTRODUCIDO: [ 2023-09-01 11:00 ;;; 2023-09-01 19:00 ] ::: periodo valido ::: (9360) ::: final igual al inicio de otro periodo
+-----LISTADO: 12
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 11:00 ;;; 2023-09-01 19:00 -> 480 ] ::: periodo valido ::: (9360) ::: final igual al inicio de otro periodo
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2023-10-03 19:30 ;;; 2023-10-03 19:30 -> 0 ] ::: periodo valido ::: (0) ::: inicio igual a final
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ] ::: periodo valido ::: (2250) ::: mas de un dia
+[ 2023-10-10 00:00 ;;; 2023-10-10 23:59 -> 1439 ] ::: periodo valido ::: (1439) ::: casi un dia entero
+[ 2023-11-12 00:00 ;;; 2023-11-13 00:00 -> 1440 ] ::: periodo valido ::: (1440) ::: un dia entero
+[ 2023-11-13 00:00 ;;; 2023-11-13 23:00 -> 1380 ] ::: periodo valido ::: (210) ::: inicio igual al final de otro periodo
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+INTRODUCIDO: [ 2023-10-09 19:30 ;;; 2023-10-10 00:00 ] ::: periodo valido ::: (990) ::: inicio y finales pegados a los de otros periodos
+-----LISTADO: 13
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 11:00 ;;; 2023-09-01 19:00 -> 480 ] ::: periodo valido ::: (9360) ::: final igual al inicio de otro periodo
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2023-10-03 19:30 ;;; 2023-10-03 19:30 -> 0 ] ::: periodo valido ::: (0) ::: inicio igual a final
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ] ::: periodo valido ::: (2250) ::: mas de un dia
+[ 2023-10-09 19:30 ;;; 2023-10-10 00:00 -> 270 ] ::: periodo valido ::: (990) ::: inicio y finales pegados a los de otros periodos
+[ 2023-10-10 00:00 ;;; 2023-10-10 23:59 -> 1439 ] ::: periodo valido ::: (1439) ::: casi un dia entero
+[ 2023-11-12 00:00 ;;; 2023-11-13 00:00 -> 1440 ] ::: periodo valido ::: (1440) ::: un dia entero
+[ 2023-11-13 00:00 ;;; 2023-11-13 23:00 -> 1380 ] ::: periodo valido ::: (210) ::: inicio igual al final de otro periodo
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+NO INTRODUCIDO: [ 2023-10-02 19:00 ;;; 2023-10-03 09:30 ] ::: se solapa 1 ::: (1) ::: solapa parcialmente
+-----LISTADO: 13
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 11:00 ;;; 2023-09-01 19:00 -> 480 ] ::: periodo valido ::: (9360) ::: final igual al inicio de otro periodo
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2023-10-03 19:30 ;;; 2023-10-03 19:30 -> 0 ] ::: periodo valido ::: (0) ::: inicio igual a final
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ] ::: periodo valido ::: (2250) ::: mas de un dia
+[ 2023-10-09 19:30 ;;; 2023-10-10 00:00 -> 270 ] ::: periodo valido ::: (990) ::: inicio y finales pegados a los de otros periodos
+[ 2023-10-10 00:00 ;;; 2023-10-10 23:59 -> 1439 ] ::: periodo valido ::: (1439) ::: casi un dia entero
+[ 2023-11-12 00:00 ;;; 2023-11-13 00:00 -> 1440 ] ::: periodo valido ::: (1440) ::: un dia entero
+[ 2023-11-13 00:00 ;;; 2023-11-13 23:00 -> 1380 ] ::: periodo valido ::: (210) ::: inicio igual al final de otro periodo
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+NO INTRODUCIDO: [ 2023-10-10 10:00 ;;; 2023-10-10 12:00 ] ::: se solapa 2 ::: (1) ::: esta dentro de otro
+-----LISTADO: 13
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 11:00 ;;; 2023-09-01 19:00 -> 480 ] ::: periodo valido ::: (9360) ::: final igual al inicio de otro periodo
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2023-10-03 19:30 ;;; 2023-10-03 19:30 -> 0 ] ::: periodo valido ::: (0) ::: inicio igual a final
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ] ::: periodo valido ::: (2250) ::: mas de un dia
+[ 2023-10-09 19:30 ;;; 2023-10-10 00:00 -> 270 ] ::: periodo valido ::: (990) ::: inicio y finales pegados a los de otros periodos
+[ 2023-10-10 00:00 ;;; 2023-10-10 23:59 -> 1439 ] ::: periodo valido ::: (1439) ::: casi un dia entero
+[ 2023-11-12 00:00 ;;; 2023-11-13 00:00 -> 1440 ] ::: periodo valido ::: (1440) ::: un dia entero
+[ 2023-11-13 00:00 ;;; 2023-11-13 23:00 -> 1380 ] ::: periodo valido ::: (210) ::: inicio igual al final de otro periodo
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+NO INTRODUCIDO: [ 2023-11-11 12:00 ;;; 2023-11-13 12:00 ] ::: se solapa 3 ::: (1) ::: contiene a otros
+-----LISTADO: 13
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 11:00 ;;; 2023-09-01 19:00 -> 480 ] ::: periodo valido ::: (9360) ::: final igual al inicio de otro periodo
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2023-10-03 19:30 ;;; 2023-10-03 19:30 -> 0 ] ::: periodo valido ::: (0) ::: inicio igual a final
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ] ::: periodo valido ::: (2250) ::: mas de un dia
+[ 2023-10-09 19:30 ;;; 2023-10-10 00:00 -> 270 ] ::: periodo valido ::: (990) ::: inicio y finales pegados a los de otros periodos
+[ 2023-10-10 00:00 ;;; 2023-10-10 23:59 -> 1439 ] ::: periodo valido ::: (1439) ::: casi un dia entero
+[ 2023-11-12 00:00 ;;; 2023-11-13 00:00 -> 1440 ] ::: periodo valido ::: (1440) ::: un dia entero
+[ 2023-11-13 00:00 ;;; 2023-11-13 23:00 -> 1380 ] ::: periodo valido ::: (210) ::: inicio igual al final de otro periodo
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+NO INTRODUCIDO: [ 2023-11-13 12:00 ;;; 2023-11-13 20:00 ] ::: se solapa 4 ::: (1) ::: solapa parcialmente
+-----LISTADO: 13
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 11:00 ;;; 2023-09-01 19:00 -> 480 ] ::: periodo valido ::: (9360) ::: final igual al inicio de otro periodo
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2023-10-03 19:30 ;;; 2023-10-03 19:30 -> 0 ] ::: periodo valido ::: (0) ::: inicio igual a final
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ] ::: periodo valido ::: (2250) ::: mas de un dia
+[ 2023-10-09 19:30 ;;; 2023-10-10 00:00 -> 270 ] ::: periodo valido ::: (990) ::: inicio y finales pegados a los de otros periodos
+[ 2023-10-10 00:00 ;;; 2023-10-10 23:59 -> 1439 ] ::: periodo valido ::: (1439) ::: casi un dia entero
+[ 2023-11-12 00:00 ;;; 2023-11-13 00:00 -> 1440 ] ::: periodo valido ::: (1440) ::: un dia entero
+[ 2023-11-13 00:00 ;;; 2023-11-13 23:00 -> 1380 ] ::: periodo valido ::: (210) ::: inicio igual al final de otro periodo
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+****ACTIVIDAD: periodo valido
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ]
+[ 2023-09-01 11:00 ;;; 2023-09-01 19:00 -> 480 ]
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ]
+[ 2023-10-03 19:30 ;;; 2023-10-03 19:30 -> 0 ]
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ]
+[ 2023-10-09 19:30 ;;; 2023-10-10 00:00 -> 270 ]
+[ 2023-10-10 00:00 ;;; 2023-10-10 23:59 -> 1439 ]
+[ 2023-11-12 00:00 ;;; 2023-11-13 00:00 -> 1440 ]
+[ 2023-11-13 00:00 ;;; 2023-11-13 23:00 -> 1380 ]
+****TOTAL dedicados: 8219
+****ACTIVIDAD: periodo
+****TOTAL dedicados: 0
+-----LISTADO: 13
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 11:00 ;;; 2023-09-01 19:00 -> 480 ] ::: periodo valido ::: (9360) ::: final igual al inicio de otro periodo
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2023-10-03 19:30 ;;; 2023-10-03 19:30 -> 0 ] ::: periodo valido ::: (0) ::: inicio igual a final
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ] ::: periodo valido ::: (2250) ::: mas de un dia
+[ 2023-10-09 19:30 ;;; 2023-10-10 00:00 -> 270 ] ::: periodo valido ::: (990) ::: inicio y finales pegados a los de otros periodos
+[ 2023-10-10 00:00 ;;; 2023-10-10 23:59 -> 1439 ] ::: periodo valido ::: (1439) ::: casi un dia entero
+[ 2023-11-12 00:00 ;;; 2023-11-13 00:00 -> 1440 ] ::: periodo valido ::: (1440) ::: un dia entero
+[ 2023-11-13 00:00 ;;; 2023-11-13 23:00 -> 1380 ] ::: periodo valido ::: (210) ::: inicio igual al final de otro periodo
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----
+-----LISTADO: 13
+[ 2023-01-01 09:00 ;;; 2023-01-01 09:00 -> 0 ] ::: Periodo1 valido ::: (1) ::: inicio de periodo igual a final de periodo
+[ 2023-02-02 09:30 ;;; 2023-02-02 10:00 -> 30 ] ::: periodo valido ::: (1) ::: menos de una hora
+[ 2023-02-20 11:00 ;;; 2023-02-28 12:00 -> 11580 ] ::: Periodo3 valido ::: (28) ::: 28 dias en febrero no bisiesto
+[ 2023-09-01 11:00 ;;; 2023-09-01 19:00 -> 480 ] ::: periodo valido ::: (9360) ::: final igual al inicio de otro periodo
+[ 2023-09-01 19:00 ;;; 2023-09-30 10:30 -> 41250 ] ::: Periodo4 valido ::: (30) ::: casi 30 dias en el periodo
+[ 2023-10-01 10:00 ;;; 2023-10-02 19:30 -> 2010 ] ::: periodo valido ::: (1) ::: algo mas de 1 dia
+[ 2023-10-03 19:30 ;;; 2023-10-03 19:30 -> 0 ] ::: periodo valido ::: (0) ::: inicio igual a final
+[ 2023-10-09 00:00 ;;; 2023-10-09 19:30 -> 1170 ] ::: periodo valido ::: (2250) ::: mas de un dia
+[ 2023-10-09 19:30 ;;; 2023-10-10 00:00 -> 270 ] ::: periodo valido ::: (990) ::: inicio y finales pegados a los de otros periodos
+[ 2023-10-10 00:00 ;;; 2023-10-10 23:59 -> 1439 ] ::: periodo valido ::: (1439) ::: casi un dia entero
+[ 2023-11-12 00:00 ;;; 2023-11-13 00:00 -> 1440 ] ::: periodo valido ::: (1440) ::: un dia entero
+[ 2023-11-13 00:00 ;;; 2023-11-13 23:00 -> 1380 ] ::: periodo valido ::: (210) ::: inicio igual al final de otro periodo
+[ 2024-02-20 11:00 ;;; 2024-02-29 10:00 -> 12900 ] ::: Periodo2 valido ::: (29) ::: 29 dias en febrero bisiesto
+-----

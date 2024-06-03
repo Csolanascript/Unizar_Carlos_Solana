@@ -1,0 +1,6 @@
+ TL : 2
+ TB : 0
+ TC : 56
+ TN : 2
+ TS : 0
+ TCons : 0

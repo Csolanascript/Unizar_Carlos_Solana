@@ -1,0 +1,2 @@
+Dependencies for Project 'practica1', Target 'Fuentes ASM': (DO NOT MODIFY !)
+F (.\Startup.s)(0x559D2F20)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Programas-Practicas\Simuladores\Keil\ARM\RV31\INC-IC:\Programas-Practicas\Simuladores\Keil\ARM\CMSIS\Include-IC:\Programas-Practicas\Simuladores\Keil\ARM\INC\Philips--pd "__UVISION_VERSION SETA 526"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)

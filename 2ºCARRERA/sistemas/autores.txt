@@ -1,0 +1,13 @@
+NIP: 873338
+Apellidos: Mateo Lorente
+Nombre: Diego
+
+Comentarios:
+-No hemos tenido dificultades como tal a la hora de realizar la práctica. La única cosa que nos pudo haber hecho pensar es cómo hacer que no se ejecute el proceso fsigma hasta no haber calculado la media previamente.
+
+-La principal diferencia podemos notarla cuando es un programa concurrente. Cuando se escribe con la instrucción cout << "Soy" << nombre << endl, se estan ejecutando 3 instrucciones distintas, por lo que al ejecutarse varios procesos simultáneamente, pueden llegar a entrometerse unos con otros. Sin embargo, cout << "Soy " + nombre + "\n" tiene una sola instrucción, por lo que es imposible que los procesos se den problemas entre ellos, asi que la segunda opción es la más correcta para este programa.
+
+-El fichero fuente del ejercicio 2 se llama ejercicio_2.cpp, y el del ejercicio 3 se llama ejercicio_3.cpp. La forma de compilarlos es la siguiente:
+
+g++ ejercicio_2.cpp -o ejercicio_2 -std=c++11 -pthread
+g++ ejercicio_3.cpp -o ejercicio_3 -std=c++11 -pthread
