@@ -1,0 +1,31 @@
+-----LISTADO: 0
+-----
+PERIODO NO VALIDO
+-----LISTADO: 0
+-----
+INTRODUCIDO: [ 1997-05-09 09:55 ;;; 1997-05-09 10:20 ] ::: Call of Duty ::: (600) ::: Revisar correo
+BORRADO: [ 1997-05-09 09:55 ;;; 1997-05-09 10:20 ]
+NO SOLAPE con: [ 1997-05-08 18:44 ;;; 1997-05-09 09:09 ]
+NO LOCALIZADO: [ 1997-05-09 04:35 ;;; 1997-05-09 05:35 ]
+PERIODO NO VALIDO
+NO LOCALIZADO: [ 1997-05-09 10:05 ;;; 1997-05-09 10:30 ]
+-----LISTADO: 0
+-----
+NO CAMBIADO: [ 1997-05-09 10:05 ;;; 1997-05-09 10:30 ] ::: Universidad ::: (15) ::: Trabajos de la práctica
+NO CAMBIADO: [ 1997-05-09 09:20 ;;; 1997-05-09 09:45 ] ::: Minecraft ::: (15) ::: Construcciones virtuales
+-----LISTADO: 0
+-----
+INTRODUCIDO: [ 1997-05-09 09:30 ;;; 1997-05-09 10:00 ] ::: GTA V ::: (15) ::: Trabajo práctica
+INTRODUCIDO: [ 1997-05-09 09:40 ;;; 1997-05-09 10:10 ] ::: Among Us ::: (15) ::: Reunión de tripulación
+NO BORRADO: [ 1997-05-09 04:30 ;;; 1997-05-09 05:30 ]
+BORRADO: [ 1997-05-09 09:40 ;;; 1997-05-09 10:10 ]
+NO LOCALIZADO: [ 2022-08-15 18:15 ;;; 2022-08-15 18:45 ]
+****ACTIVIDAD: Minecraft
+****TOTAL dedicados: 0
+NO CAMBIADO: [ 2022-08-15 17:30 ;;; 2022-08-15 18:30 ] ::: Correo ::: (15) ::: Responder correos importantes
+-----LISTADO: 1
+[ 1997-05-09 09:30 ;;; 1997-05-09 10:00 -> 30 ] ::: GTA V ::: (15) ::: Trabajo práctica
+-----
+INTRODUCIDO: [ 2022-08-15 16:30 ;;; 2022-08-15 18:00 ] ::: Rocket League ::: (90) ::: Preparativos para el partido
+NO LOCALIZADO: [ 2022-08-15 18:30 ;;; 2022-08-15 19:00 ]
+INTRODUCIDO: [ 2022-08-15 17:30 ;;; 2022-08-15 18:30 ] ::: B ::: (2022) ::: 2022-08-15 18:00

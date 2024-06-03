@@ -1,0 +1,1 @@
+--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" --list ".\practica4.lst" --xref -o "practica4.o" --depend "practica4.d" "E:\practica4.s"
